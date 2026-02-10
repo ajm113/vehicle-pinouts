@@ -1,0 +1,25 @@
+name: Misspell Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  misspell:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install misspell
+        run: |
+          curl -L https://github.com/client9/misspell/releases/download/v0.3.4/misspell_0.3.4_linux_64bit.tar.gz \
+            | tar xz
+          sudo mv misspell /usr/local/bin/
+
+      - name: Run misspell
+        run: |
+          misspell -error .
+
