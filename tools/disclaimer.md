@@ -1,10 +1,3 @@
-# Vehicle Pinout
-
-*Open source information of vehicle pinout diagrams and useful tips for ECUs, fuel systems, lighting, ABS, and more!*
-
-
-- [Hyundai](hyundai/index.md)
-
 ---
 
 ### Disclaimer
@@ -18,3 +11,4 @@ By using these pinouts, you accept all associated risks.
 ⚠️ **All pinouts must be independently verified** using proper diagnostic tools (such as probes or multimeters) and/or official manufacturer documentation **before making any connections**.
 
 Use at your own risk.
+
